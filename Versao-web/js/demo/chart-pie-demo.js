@@ -7,7 +7,7 @@ var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ["Blue", "Red"],
+    labels: ["Vacinados", "Não-Vacinados"],
     datasets: [{
       data: [60.00, 40.00],
       backgroundColor: ['#007bff', '#dc3545'],

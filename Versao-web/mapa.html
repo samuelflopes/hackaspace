@@ -2,19 +2,39 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Heatmaps</title>
+    <title></title>
 
             <!--LINK MAPAS.CSS-->
     <link rel="stylesheet" href="mapas.css">
 
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Page level plugin CSS-->
+    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/ab-admin.mim.css">
+<!--Link Css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
 
   <body>
-    <div id="floating-panel">
-      <button onclick="toggleHeatmap()">Alternar Mapa de Calor</button>
-      <button onclick="changeGradient()">Alterar gradiente</button>
+
+
+    <div class="button mt-3" >
+
+      <button  onclick="toggleHeatmap()" type="button" class="btn btn-sm">Alternar Mapa de Calor
+
+      <button onclick="changeGradient()" type="button" class="btn btn-sm">Alterar gradiente
+
+      <button onclick="changeRadius()" type="button" class="btn btn-sm">Mudar raio
+
+      <button onclick="changeOpacity()" type="button" class="btn btn-sm">Alterar a opacidade
+
+    <!--<button onclick="toggleHeatmap() btn btn-primary">Alternar Mapa de Calor</button>-->
+      <!--<button onclick="changeGradient()">Alterar gradiente</button>
       <button onclick="changeRadius()">Mudar raio</button>
-      <button onclick="changeOpacity()">Alterar a opacidade</button>
+      <button onclick="changeOpacity()">Alterar a opacidade</button>-->
     </div>
 
     <div id="map"></div>
@@ -1361,5 +1381,7 @@
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9SlB2ZWREwU-4VhDfz8ZOCOyAWiBQROg&libraries=visualization&callback=initMap">
     </script>
+
+
   </body>
 </html>

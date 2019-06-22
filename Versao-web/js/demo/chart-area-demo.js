@@ -9,7 +9,7 @@ var myLineChart = new Chart(ctx, {
   data: {
     labels: ["Mar 1", "Mar 2", "Mar 3", "Mar 4", "Mar 5", "Mar 6", "Mar 7", "Mar 8", "Mar 9", "Mar 10", "Mar 11", "Mar 12", "Mar 13"],
     datasets: [{
-      label: "Sessions",
+      label: "Vacinados",
       lineTension: 0.3,
       backgroundColor: "rgba(2,117,216,0.2)",
       borderColor: "rgba(2,117,216,1)",
@@ -20,7 +20,7 @@ var myLineChart = new Chart(ctx, {
       pointHoverBackgroundColor: "rgba(2,117,216,1)",
       pointHitRadius: 50,
       pointBorderWidth: 2,
-      data: [10000, 30162, 26263, 18394, 18287, 28682, 31274, 33259, 25849, 24159, 32651, 31984, 38451],
+      data: [10000, 3162, 26263, 18394, 18287, 28682, 31274, 33259, 25849, 24159, 32651, 31984, 38451],
     }],
   },
   options: {
@@ -33,15 +33,17 @@ var myLineChart = new Chart(ctx, {
           display: false
         },
         ticks: {
-          maxTicksLimit: 7
+          maxTicksLimit: 5
         }
       }],
       yAxes: [{
         ticks: {
-          min: 200,
-          max: 3000,
+          min: 0,
+          max:40000,
           maxTicksLimit: 5
         },
+
+      //the opacity grafic
         gridLines: {
           color: "rgba(0, 0, 0, .125)",
         }
