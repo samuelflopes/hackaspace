@@ -26,7 +26,7 @@
 
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-    <a class="navbar-brand mr-1" href="index.html"> Minha Saúde </a>
+    <a class="navbar-brand mr-1" href="index.html"> Alerta Saúde </a>
 
     <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
       <i class="fas fa-bars"></i> <!--ICONE HANBURGUER-->
@@ -106,6 +106,9 @@
           <div class="card-body">
             <div class="table-responsive">
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" onclick="deleta();" data-dismiss="modal">Atualizar</button>
+                    </div>
                 <thead>
                   <tr>
                     <th>Nome</th>
@@ -118,18 +121,18 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Carlos Eduardo Souza</td>
-                    <td>04/12/1998</td>
-                    <td>132.174.423-42</td>
-                    <td>marcelo Carvalho</td>
-                    <td>Goiania - GO</td>
+                  <tr id="target">
+                    <td>Maria Eduarda da Silva</td>
+                    <td>01/12/2018</td>
+                    <td>314.291.255-30</td>
+                    <td>Ana Claudia da Silva</td>
+                    <td>Vitória - ES</td>
                     <td>61 995545345</td>
-                    <td>carlos@gmail.com</td>
+                    <td>ana_claudia@gmail.com</td>
                   </tr>
                   <tr>
                     <td>Sônia Clarrise Caldeira</td>
-                    <td>11/08/1994</td>
+                    <td>11/08/2018</td>
                     <td>176.521.658-30</td>
                     <td>Maria Aparecida</td>
                     <td>Goiania - GO</td>
@@ -138,7 +141,7 @@
                   </tr>
                   <tr>
                     <td>Carolina Nascimento</td>
-                    <td>07/05/1992</td>
+                    <td>07/10/2018</td>
                     <td>966.209.254-48</td>
                     <td>Tadel Machado</td>
                     <td>Goiania - GO</td>
@@ -147,7 +150,7 @@
                   </tr>
                   <tr>
                     <td>Tânia Figueredo</td>
-                    <td>01/03/1977</td>
+                    <td>01/12/2018</td>
                     <td>594.831.486-34</td>
                     <td>Marina Stefany</td>
                     <td>Goiania - GO</td>
@@ -156,16 +159,16 @@
                   </tr>
                   <tr>
                     <td>Adriana Bruna Teixeira</td>
-                    <td>13/03/1990</td>
+                    <td>13/11/2018</td>
                     <td>943.483.865-79</td>
                     <td>Luana Elaine</td>
                     <td>Goiania - GO</td>
                     <td>61 995215345</td>
-                    <td>Adrianabarr@gmail.com</td>
+                    <td>adrianabarr@gmail.com</td>
                   </tr>
                   <tr>
                     <td>Samuel Ferreira Lopez</td>
-                    <td>12/06/2015</td>
+                    <td>12/01/2019</td>
                     <td>876.292.123-09</td>
                     <td>Amanda Ester</td>
                     <td>Goiania - GO</td>
@@ -222,6 +225,13 @@
       </div>
     </div>
   </div>
+
+  <script>
+  function deleta(){
+    console.log('teste')
+    document.getElementById('target').style.display = 'none';
+  }
+  </script>
 
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
